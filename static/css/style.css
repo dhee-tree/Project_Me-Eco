@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', sans-serif;
+    --primary-color: #1c1a0c;
+    --secondary-color: #375b45;
+    --tertiary-color: #d7cbb6;
+    --style-color: #e5bc4b;
+    --fifth-color: #363a2b;
+
+}
+
+/* Main section */
+.main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero.PNG");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100vw;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+}
+
+/* Waiting section */
+.waiting {
+    background-color: #fff;
+    height: 35vh;
+    align-items: center;
+    text-align: center;
+}
+
+.wait-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.wait-form input {
+    width: 20rem;
+    height: 2rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.wait-form button {
+    width: 10rem;
+    height: 2rem;
+    margin: 0.5rem;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.wait-form button:hover {
+    width: 10rem;
+    height: 2rem;
+    margin: 0.5rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    background-color: #fff;
+    color: var(--secondary-color);
+
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    height: 30vh;
+    text-align: center;
+    align-items: center;
+}
+
+/* Media querries */
+@media only screen and (max-width: 600px) {
+    .main {
+        height: 50vh;
+    }
+
+    .waiting {
+        height: 50vh;
+    }
+
+    .footer {
+        height: 30vh;
+    }
+}
