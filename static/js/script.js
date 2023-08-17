@@ -3,7 +3,7 @@ showSlides(slideIndex);
 
 setInterval(() => {
     changeSlide(1);
-  }, 3000);
+  }, 5000);
 
 function changeSlide(n) {
   showSlides(slideIndex += n);

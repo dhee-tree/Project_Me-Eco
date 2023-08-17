@@ -23,6 +23,7 @@
         <script src="https://kit.fontawesome.com/c5cd4f3e40.js" crossorigin="anonymous"></script>
 		<!-- Custom CSS		-->
 		<link rel="stylesheet" type="text/css" href="static/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="static/css/slide.css" />
 
 	</head>
 
@@ -69,13 +70,44 @@
             <!-- Main Content -->
             <main>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-8">
+                        <h1>Welcome to Project Me-Eco</h1>
+                        <p class="intro">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem fugit aliquid veniam! Asperiores officia eaque molestias neque libero adipisci, atque molestiae mollitia minus reprehenderit incidunt reiciendis nesciunt, sapiente quibusdam aliquam.
+                        </p>
 
+                        <a href="#" class="btn btn-help">Green News</a>
                     </div>
 
-                    <div class="col-md-6">
-                        
+                    <div class="col-md-4">
+                        <div class="slideshow-container">
+                            <div class="mySlides">
+                              <img src="static/images/slide1.jpg" class="slide-img">
+                            </div>
+                          
+                            <div class="mySlides">
+                              <img src="static/images/slide2.jpg" class="slide-img">
+                            </div>
+                          
+                            <div class="mySlides">
+                              <img src="static/images/slide3.jpg" class="slide-img">
+                            </div>
+                          
+                            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                          </div>
+                          
+                          <div class="dot-container">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                          </div>
                     </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <a href="beta.html" class="btn btn-help">See Beta Version</a>
+                  </div>
                 </div>
             </main>
         </div>
