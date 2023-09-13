@@ -23,97 +23,61 @@
         <script src="https://kit.fontawesome.com/c5cd4f3e40.js" crossorigin="anonymous"></script>
 		<!-- Custom CSS		-->
 		<link rel="stylesheet" type="text/css" href="static/css/style.css" />
-        <link rel="stylesheet" type="text/css" href="static/css/slide.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/slide.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/hero.css" />
 
-	</head>
+</head>
 
-    <body>
-        <div class="container-fluid">
-            <!-- Navigation bar -->
-            <header>
-                <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
-                    <div class="container-fluid">
-                      <a class="navbar-brand" href="index.html">
-                        <img src="static/images/logo.jpg" alt="Project Me-Eco Logo" srcset="" class="logo">
-                      </a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      
-                      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                        <ul class="navbar-nav ml-auto">
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">WHAT IS ME-ECO</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="who.html">WHO ARE WE</a>
-                          </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">ME-ECO SYSTEM</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="health.html">MENTAL HEALTH</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">PLANTS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">GET HELP</a>
-                            </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="line fixed-top"></div>
-                </nav>
-            </header>
+<body>
+  <main>
+    <section id="main">
+      <div class="hero-image">
 
-            <!-- Main Content -->
-            <main>
-                <div class="row">
-                    <div class="col-md-8">
-                        <h1>Welcome to Project Me-Eco</h1>
-                        <p class="intro">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem fugit aliquid veniam! Asperiores officia eaque molestias neque libero adipisci, atque molestiae mollitia minus reprehenderit incidunt reiciendis nesciunt, sapiente quibusdam aliquam.
-                        </p>
+        <video autoplay muted loop class="hero-video">
+          <source src="./static/vids/1920.mp4" type="video/mp4">
+        </video>
 
-                        <a href="#" class="btn btn-help">Green News</a>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="slideshow-container">
-                            <div class="mySlides">
-                              <img src="static/images/slide1.jpg" class="slide-img">
-                            </div>
-                          
-                            <div class="mySlides">
-                              <img src="static/images/slide2.jpg" class="slide-img">
-                            </div>
-                          
-                            <div class="mySlides">
-                              <img src="static/images/slide3.jpg" class="slide-img">
-                            </div>
-                          
-                            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                            <a class="next" onclick="changeSlide(1)">&#10095;</a>
-                          </div>
-                          
-                          <div class="dot-container">
-                            <span class="dot" onclick="currentSlide(1)"></span>
-                            <span class="dot" onclick="currentSlide(2)"></span>
-                            <span class="dot" onclick="currentSlide(3)"></span>
-                          </div>
-                    </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <a href="beta.html" class="btn btn-help">See Beta Version</a>
-                  </div>
-                </div>
-            </main>
+        <div class="content">
+          <div class="col-md-12 d-flex wrap justify-content-between">
+            <img src="./static/images/logo.jpg" alt="Project Me-Eco Logo" id="logo">
+            <span class="sidebar-trigger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bars"></i></span>
+          </div>
+          
+          <!-- Sidebar -->
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasRightLabel">Welcome to Project Me-Eco</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <a class="side-item" href="#">HOME</a>
+              <a class="side-item" href="#">WHAT IS ME-ECO</a>
+              <a class="side-item" href="#">WHO WE ARE</a>
+            </div>
+          </div>
+  
+          <div class="hero-text">
+            <h1>Project Me-Eco</h1>
+            <p>Empowering people to reflect, heal and grow.</p>
+            <a href="#others" class="btn btn-success">Read More</a>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section id="others">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>More</h2>
+        </div>
+      </div>
+    </section>
+    
+  </main>
 
         
-        <!--Custom JS-->
-        <script src="static/js/script.js"></script>
-    </body>
+  <!--Custom JS-->
+  <script src="static/js/script.js"></script>
+  <script src="static/js/hero.js"></script>
+</body>
 </html>
