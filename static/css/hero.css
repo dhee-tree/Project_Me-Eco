@@ -1,35 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
-    color: #000000;
     overflow-x: hidden;
     overflow-y: auto;
 }
 
-#logo {
-    height: 4rem;
-    margin: 5px;
-}
-
-.offcanvas-end {
-    width: 17rem !important;
-}
-
-.side-item {
-    display: block;
-    text-decoration: none;
-    color: #212529;
-    padding: 0.5rem 0;
-    margin: 2px;    
-}
-
-.side-item:hover {
-    background-color: #a0a0a0;
-    color: #fff;
-}
-
-/* Style the video: 100% width and height to cover the entire window */
+/* Hero */
 .hero-video {
     position: absolute;
     top: 0;
@@ -46,11 +22,6 @@ body {
     height: 100vh;
     position: relative;
     z-index: 1; /* Ensure the content is above the video */
-}
-
-/* Hero */
-#main {
-    height: 100vh;
 }
 
 .hero-image {
@@ -72,26 +43,14 @@ body {
 
 .hero-text button {
     border: none;
-    outline: 0;
     display: inline-block;
     padding: 10px 25px;
-    color: black;
-    background-color: #ddd;
-    text-align: center;
+    color: #fff;
+    background-color: var(--style-color);
     cursor: pointer;
 }
 
 .hero-text button:hover {
-    background-color: #555;
-    color: white;
-}
-
-.sidebar-trigger {
-    color: #fff;
-    font-size: 1.5rem;
-    cursor: pointer;
-    /* border: 3px solid #fff; */
-    border-radius: 20%;
-    padding: 15px;
-    margin-right: 20px;
+    background-color: #fff;
+    color: var(--secondary-color);
 }
