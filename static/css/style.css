@@ -15,6 +15,8 @@ body {
     padding-top: 7rem;
     overflow-x: hidden;
     overflow-y: auto;
+    background-color: var(--fifth-color);
+    color: #fff;
 }
 
 #logo {
@@ -108,7 +110,7 @@ h1 {
 
 /* Footer */
 footer {
-    background-color: var(--fifth-color);
+    background-color: var(--primary-color);
     padding: 2rem;
     color: #fff;
     width: 100%;
@@ -159,4 +161,52 @@ h5 {
     h1 {
         font-size: 2.5rem;
     }
+}
+
+/* Other pages */
+
+#main-section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Collapable Plants */
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #555;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.collapse-content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #403e3e;
 }
