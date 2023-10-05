@@ -24,6 +24,25 @@ body {
     margin: 5px;
 }
 
+.btn-close {
+    color: #fff !important;
+}
+
+.eco-btn, .eco-btn-revert:hover {
+    background-color: var(--fifth-color);
+    color: var(--tertiary-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.eco-btn:hover, .eco-btn-revert {
+    background-color: var(--tertiary-color);
+    color: var(--fifth-color);
+}
+
 /* Main */
 #main {
     height: 100vh;
@@ -45,14 +64,11 @@ h1 {
     margin-right: 20px;
 }
 
-.btn-close {
-    color: #fff !important;
-}
-
 /* Sidebar */
 .here {
     text-decoration: underline !important;
 }
+
 .offcanvas-end {
     width: 20rem !important;
 }
@@ -61,18 +77,18 @@ h1 {
     display: block;
     text-decoration: none;
     color: #fff;
-    padding: 0.5rem 0;
-    margin: 2px;    
+    padding: 0.5rem 0.5rem;
+    margin: 20px;    
     font-weight: bold;
 }
 
 .side-item:hover {
-    background-color: #a0a0a0;
-    color: #fff;
+    background-color: var(--style-color);
+    color: var(--fifth-color);
 }
 
 .offcanvas-header {
-    background-color: var(--secondary-color);
+    background-color: var(--fifth-color);
     color: #fff;
 }
 
@@ -83,7 +99,7 @@ h1 {
 }
 
 .offcanvas-body {
-    background-color: var(--secondary-color) !important;
+    background-color: var(--fifth-color) !important;
     color: var(--tertiary-color);
 }
 
@@ -107,6 +123,10 @@ h1 {
 }
 
 /* About */
+.card {
+    background-color: var(--style-color);
+    color: var(--primary-color);
+}
 
 /* Footer */
 footer {
